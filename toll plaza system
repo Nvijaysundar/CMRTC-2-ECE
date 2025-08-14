@@ -1,0 +1,27 @@
+In a small toll plaza system, each vehicle passing through must pay a toll fee based on its type.
+
+ The toll fee per car is fixed at ₹50.
+ The toll fee per truck is fixed at ₹100.
+ The plaza also keeps track of the total vehicles passed and the total revenue collected for the day.
+
+Write a Java program that:
+
+1. Uses static variables to store the fixed toll fees for cars and trucks.
+2. Uses instance variables to store the count of cars and trucks for that particular toll booth object.
+3. Includes a method to calculate the total revenue for that booth using simple multiplication.
+4. Demonstrates the program by creating multiple toll booth objects and printing:
+
+    Cars passed
+    Trucks passed
+    Revenue for that booth
+5. Finally, prints the total revenue and total vehicles for the entire plaza.
+Sample Input
+Booth 1: Cars=5, Trucks=2  
+Booth 2: Cars=3, Trucks=4  
+
+Sample Output
+
+Booth 1  Cars: 5, Trucks: 2, Revenue: ₹450  
+Booth 2  Cars: 3, Trucks: 4, Revenue: ₹550  
+Total Vehicles: 14  
+Total Revenue: ₹1000
