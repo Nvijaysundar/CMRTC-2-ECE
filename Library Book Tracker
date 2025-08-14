@@ -1,0 +1,34 @@
+Scenario: "Library Book Tracker"
+
+ The city library has many books. Every book has:
+
+  A title and book ID (different for every book).
+  All books belong to the same library name (e.g., “City Central Library”).
+  The system should also show the current year when the book is being added.
+
+Task: Write a simple Java program using a class called `Book` that:
+
+ Uses a static variable for the library name (same for all books).
+ Uses instance variables for book title and book ID.
+ Uses a local variable inside `main()` to represent the current year.
+ Create 2 books with different details and print all information for both.
+
+Hint:
+
+ Use `Book` class with `String title`, `int bookId` as instance variables.
+ Use `static String libraryName = "City Central Library";`
+ In `main()`, create 2 `Book` objects and set values using dot notation.
+ Use a local variable like `int currentYear = 2025;` to show the year.
+
+
+ Expected Output Format:
+
+Library: City Central Library
+Book Title: Java Basics
+Book ID: 101
+Year: 2025
+
+Library: City Central Library
+Book Title: Python Guide
+Book ID: 102
+Year: 2025
