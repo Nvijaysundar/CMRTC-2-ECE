@@ -1,0 +1,50 @@
+ Scenario: Supermart Billing with Discount Rules
+
+You are asked to build a simple billing system for a supermarket.
+
+The system should:
+
+ Accept a customer name and amount of purchase.
+ Calculate the total amount after applying discount logic:
+
+   If the purchase is above ₹1000, apply a 10% discount.
+   If the purchase is between ₹500–₹1000, apply 5% discount.
+   Below ₹500, no discount.
+ Also, add a fixed tax (e.g., 18% GST) to the discounted amount.
+ Finally, display the customer name, original amount, discounted amount, tax added, and final amount to be paid.
+
+
+ Your Task:
+
+You must:
+
+ Decide which variables should be:
+
+   Static (shared for all)
+   Instance (unique to each customer)
+   Local (temporary inside methods)
+ Decide how many methods are needed:
+
+   One for calculating discount?
+   One for adding tax?
+   One to display bill?
+
+ Hints for Implementation (Think Before You Code!):
+
+ Is the GST rate same for all customers? Should it be static?
+ Is discount logic calculated every time based on individual customer?
+ What values are only needed temporarily in calculations?
+ How should you design methods — one big method, or multiple smaller ones?
+
+
+
+ Expected Output Format:
+
+
+Customer: Riya
+Original Amount: ₹1200
+Discount Applied: ₹120
+Amount after Discount: ₹1080
+Tax (18%): ₹194.4
+Final Amount to Pay: ₹1274.4
+
