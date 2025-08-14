@@ -1,0 +1,41 @@
+
+Scenario:
+
+A cricket club organizes a tournament and keeps detailed records for calculating player rewards.
+
+ Every player has:
+
+   Jersey number (unique) → instance variable
+   Runs scored in a match → instance variable
+ The bonus rate per run is the same for all players (₹10) → static variable
+ If a player’s runs are more than 50, they get an extra flat special bonus of ₹200 → constant (final).
+ For each player, you must:
+
+   Calculate total bonus using local variables in the calculation method.
+   Accept runs and jersey number through a parameterized constructor.
+ The system should also:
+
+   Keep track of total players and total bonus payout (static variables).
+   Display all player details with their calculated bonus.
+   Finally print the total players and total payout at the end.
+
+
+
+Sample Input
+
+
+Player 1: Jersey=7, Runs=45  
+Player 2: Jersey=18, Runs=60  
+Player 3: Jersey=10, Runs=75  
+
+
+Sample Output
+
+
+Player 7  Runs: 45, Bonus: ₹450  
+Player 18  Runs: 60, Bonus: ₹800  
+Player 10  Runs: 75, Bonus: ₹950  
+Total Players: 3  
+Total Bonus Payout: ₹2200
+
+
