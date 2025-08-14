@@ -1,0 +1,42 @@
+Scenario: Delivery Charge Calculator
+
+An online store wants to calculate the total delivery charge for each customer based on:
+
+ A fixed base charge (`static`) applied to every order.
+ A distance-based charge, calculated by multiplying the distance (in km) with a fixed rate per km.
+ Each customer has a name and a distance to their location (`instance`).
+
+
+
+Task Requirements:
+
+1. Create a class `Delivery`.
+2. Declare:
+
+    A static variable `baseCharge = 50`
+    Instance variables:
+     `String customerName`
+     `int distanceInKm`
+3. Create a method `int calculateDeliveryCharge()` that:
+
+    Declares a local variable `ratePerKm = 10`
+    Calculates `totalCharge = baseCharge + (distanceInKm  ratePerKm)`
+    Returns `totalCharge`
+4. Create a method `void displayDetails()` that:
+
+    Prints customer name, distance, and total delivery charge.
+5. In `main()`, create two customer objects, assign values, and display their details.
+
+
+
+ Expected Output Format:
+
+
+Customer: Arjun
+Distance: 5 km
+Total Delivery Charge: ₹100
+
+Customer: Sneha
+Distance: 10 km
+Total Delivery Charge: ₹150
+
