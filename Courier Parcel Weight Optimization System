@@ -1,0 +1,115 @@
+Courier Parcel Weight Optimization System
+
+ Scenario:
+
+A courier company handles multiple parcels per day. Each parcel has:
+
+* A unique ID (String)
+* Weight in kilograms (double)
+* Distance in kilometers (int)
+
+The company charges based on a weight-distance multiplier system:
+
+| Weight Category    | Base Rate per km |
+| ≤ 5 kg             | ₹5               |
+| > 5 kg and ≤ 20 kg | ₹10              |
+| > 20 kg            | ₹15              |
+
+ Tasks:
+
+1. For N parcels (use arrays to store parcel data), calculate:
+
+   * Base charge = rate \* distance
+   * Apply fuel surcharge of 18% on base charge
+   * If parcel weight > 25 kg → add heavy handling fee of ₹250
+2. Categorize the parcel based on total charge:
+
+   * < ₹500 → "Light"
+   * ₹500 – ₹1500 → "Standard"
+   * > ₹1500 → "Heavy"
+3. Detect and print:
+
+   * Parcel with maximum delivery charge
+   * Parcel with minimum delivery charge
+4. Calculate:
+
+   * Total revenue for the day
+   * Average charge per parcel
+   * Count of each parcel type (Light, Standard, Heavy)
+
+
+
+Parcel 1: ID=PX101, Weight=3 kg, Distance=100 km  
+Parcel 2: ID=PX102, Weight=12 kg, Distance=150 km  
+Parcel 3: ID=PX103, Weight=28 kg, Distance=80 km  
+Parcel 4: ID=PX104, Weight=7 kg, Distance=70 km
+
+
+Parcel PX101 - Base: ₹500, Surcharge: ₹90.0, Final: ₹590 → Standard  
+Parcel PX102 - Base: ₹1500, Surcharge: ₹270.0, Final: ₹1770 → Heavy  
+Parcel PX103 - Base: ₹1200, Surcharge: ₹216.0, +Handling: ₹250, Final: ₹1666 → Heavy  
+Parcel PX104 - Base: ₹700, Surcharge: ₹126.0, Final: ₹826 → Standard  
+
+Total Revenue: ₹4852  
+Average Charge: ₹1213  
+Light: 0, Standard: 2, Heavy: 2  
+Max Charge: PX102 → ₹1770  
+Min Charge: PX101 → ₹590
+Courier Parcel Weight Optimization System
+
+ Scenario:
+
+A courier company handles multiple parcels per day. Each parcel has:
+
+* A unique ID (String)
+* Weight in kilograms (double)
+* Distance in kilometers (int)
+
+The company charges based on a weight-distance multiplier system:
+
+| Weight Category    | Base Rate per km |
+|  | - |
+| ≤ 5 kg             | ₹5               |
+| > 5 kg and ≤ 20 kg | ₹10              |
+| > 20 kg            | ₹15              |
+
+ Tasks:
+
+1. For N parcels (use arrays to store parcel data), calculate:
+
+   * Base charge = rate \* distance
+   * Apply fuel surcharge of 18% on base charge
+   * If parcel weight > 25 kg → add heavy handling fee of ₹250
+2. Categorize the parcel based on total charge:
+
+   * < ₹500 → "Light"
+   * ₹500 – ₹1500 → "Standard"
+   * > ₹1500 → "Heavy"
+3. Detect and print:
+
+   * Parcel with maximum delivery charge
+   * Parcel with minimum delivery charge
+4. Calculate:
+
+   * Total revenue for the day
+   * Average charge per parcel
+   * Count of each parcel type (Light, Standard, Heavy)
+
+
+
+Parcel 1: ID=PX101, Weight=3 kg, Distance=100 km  
+Parcel 2: ID=PX102, Weight=12 kg, Distance=150 km  
+Parcel 3: ID=PX103, Weight=28 kg, Distance=80 km  
+Parcel 4: ID=PX104, Weight=7 kg, Distance=70 km
+
+
+Parcel PX101 - Base: ₹500, Surcharge: ₹90.0, Final: ₹590 → Standard  
+Parcel PX102 - Base: ₹1500, Surcharge: ₹270.0, Final: ₹1770 → Heavy  
+Parcel PX103 - Base: ₹1200, Surcharge: ₹216.0, +Handling: ₹250, Final: ₹1666 → Heavy  
+Parcel PX104 - Base: ₹700, Surcharge: ₹126.0, Final: ₹826 → Standard  
+
+Total Revenue: ₹4852  
+Average Charge: ₹1213  
+Light: 0, Standard: 2, Heavy: 2  
+Max Charge: PX102 → ₹1770  
+Min Charge: PX101 → ₹590
