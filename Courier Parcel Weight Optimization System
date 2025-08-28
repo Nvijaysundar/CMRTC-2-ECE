@@ -55,3 +55,98 @@ Average Charge: ₹1213
 Light: 0, Standard: 2, Heavy: 2  
 Max Charge: PX102 → ₹1770  
 Min Charge: PX101 → ₹590
+
+
+import java.util.Scanner;
+
+class Courier {
+	String uId;
+	double weight;
+	int distanceInKm;
+	static int baseId = 100;
+	{
+		baseId++;
+	}
+	
+	boolean handling = false;
+	public Courier(double weight, int distanceInKm) {
+		this.uId = "PX"+baseId;
+		this.weight = weight;
+		this.distanceInKm = distanceInKm;
+	}
+	
+	int calBaseCharge()
+	{
+		return this.distanceInKm*this.getBasePrice();
+	}
+	private int getBasePrice() {
+		if(this.weight<=5)
+			return 5;
+		else if(this.weight>5 &&this.weight<=20)
+			return 10;
+		else 
+			return 15;
+	}
+
+	void display()
+	{
+		System.out.println("Parcel "+this.uId +" - Base: ₹"+this.calBaseCharge()
+			+", Surcharge: ₹"+this.calSurCharge()+this.calHandling()+
+			"Final: ₹"+this.calFinalCharge()+"-->"+this.findCategory()
+				);
+	}
+
+	private String findCategory() {
+		if(this.calFinalCharge()<500)
+			return "Light";
+		else if(this.calFinalCharge()<=1500)
+			return "Standard";
+		return "Heavy";
+	}
+
+	private double calFinalCharge() {
+		if(this.handling)
+			return this.calBaseCharge()+this.calSurCharge()+250;
+		return this.calBaseCharge()+this.calSurCharge();
+	}
+
+	private String calHandling() {
+		if(this.weight>25) {
+			this.handling = true;
+			return", +Handling: ₹250,";
+		}
+		return ", ";
+	}
+
+	private double calSurCharge() {
+		
+		return this.calBaseCharge()*0.18;
+	}
+	
+}
+public class Executor{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter No of Products :");
+		Courier parcels[] = new Courier[Integer.parseInt(sc.nextLine())];
+		for(int i=0;i<parcels.length;i++)
+		{
+			parcels[i] = createNewParcel(sc);
+		}
+		
+		for(int i=0;i<parcels.length;i++)
+		{
+			parcels[i].display();
+		}
+		sc.close();
+	}
+
+	static Courier createNewParcel(Scanner sc) {
+		
+		System.out.println("Enter Parcel Wt");
+		double weight = Double.parseDouble(sc.nextLine());
+		System.out.println("Enter Distance in Km");
+		int distanceInKm = Integer.parseInt(sc.nextLine());
+		return new Courier(weight, distanceInKm);
+	}
+}
