@@ -1,0 +1,125 @@
+Q1. Smart ID Generator – Gym App
+
+A gym wants to generate a unique ID for each new member. The ID must include:
+
+ The first few characters of their name,
+ The last two digits of their joining year,
+ A random number at the end.
+
+Scenario:
+You're developing this logic for the onboarding team so they can quickly assign IDs to new users.
+
+ Example Output:
+
+Input Name: Anusha
+Joining Year: 2023
+Generated ID: ANU23X19
+
+
+
+
+ Q2. Fitness App – Email Domain Extractor
+
+Your fitness app collects email addresses of users. You need to extract just the domain name from the email for analytics.
+
+Scenario:
+If someone enters mohan34@yahoo.com, your system should store yahoo as the provider.
+
+Example Output:
+
+
+Email Entered: mohan34@yahoo.com
+Domain Provider: yahoo
+
+
+
+
+ Q3. User Profile – Name Formatting Tool
+
+Users often enter names in all lowercase or uppercase, and sometimes with extra spaces. Clean up and format names to show properly on their profile.
+
+Scenario:
+Your task is to build a formatter that ensures names like "   PRIYA kumari " appear as "Priya Kumari" in the app.
+
+Example Output:
+
+
+Input:   PRIYA kumari  
+Formatted Name: Priya Kumari
+
+
+
+
+ Q4. Email Verifier – Registration Module
+
+Before allowing a user to register, the app must verify that their email looks valid.
+
+Scenario:
+The system should check if:
+
+ The email contains an '@' symbol.
+ It ends with .com.
+
+ Example Output
+
+Email: xyz123@gmail.com
+Is Valid: true
+
+
+
+
+Q5. Palindrome Check – Fun Fitness Challenge
+
+As part of a user challenge, users get bonus points if their name is a palindrome (reads the same backward).
+
+Scenario:
+Your logic should reverse the input name and check if it matches the original.
+Example Output:
+
+
+Input Name: Nitin
+Is Palindrome: true
+
+
+Q6. Password Filter – App Security
+
+Users should not use common words like "password", "admin", or "123" in their password.
+
+Scenario:
+Build a logic that flags such passwords before allowing registration.
+Example Output:
+
+
+Entered Password: admin@123
+Contains Forbidden Word: true
+
+
+
+
+ Q7. Workout Tag Extractor – Hashtag Tool
+
+Users post workout updates like:
+"Today I completed 5km run! fitness run workout"
+
+Scenario:
+You need to extract all the hashtags to show trending workout tags in the app.
+Example Output:
+
+
+Post: Today I completed 5km run! fitness run workout
+Extracted Tags: fitness, run, workout
+
+
+
+
+ Q8. Character Insight – Typing Speed Trainer
+
+To help users improve their typing, the app analyzes their favorite words and counts how often a particular character appears.
+
+Scenario:
+If the user inputs "banana" and the system tracks 'a', the output should show 3.
+Example Output:
+
+Word: banana
+Character: a
+Frequency: 3
