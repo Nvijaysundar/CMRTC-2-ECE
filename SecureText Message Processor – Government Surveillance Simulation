@@ -1,0 +1,47 @@
+SecureText Message Processor – Government Surveillance Simulation
+Background:
+You are a software engineer working for a classified government agency named "SecureText Analysis Division (STAD)". 
+Field agents frequently send encrypted operation logs to your backend system. 
+Each message log contains a specific format and requires parsing, classification, formatting, and secure processing
+ Problem Statement:
+Your task is to develop a Java module that processes a block of agent messages. These messages follow a fixed pattern but must be cleaned, analyzed, transformed, and printed in a readable summary format. 
+Your system will:
+Input Specifications:
+The messages come as a multiline string block, hardcoded into the code.
+Each line contains 3 sections separated by a "-" symbol:  
+[AgentCode]  Operation Operation_Name  YYYY/MM/DD hh:mmAM/PM
+ Example:
+[Agent007]  Operation Midnight_Fox  2025/07/12 09:30AM 
+Processing Requirements:
+1. Message Separation:
+   Break down the block of messages line by line using a loop (you are not allowed to use arrays or collections).
+2.  Extraction:
+   For each message, extract:
+    Agent ID (e.g., `[Agent007]`)
+    Operation Name (e.g., `Midnight_Fox`)
+    Timestamp (e.g., `2025/07/12 09:30AM`)
+3. String Operations:
+    Remove brackets `[]` from Agent ID.
+    Replace all underscores (`_`) in the operation name with spaces (` `).
+    Use string manipulation to extract only the time and period (e.g., `09:30AM`).
+    Determine whether the operation is HIGH or LOW priority:
+      If operation name contains Fox, Shadow, or Eagle, it's HIGH priority.
+      Otherwise, it's LOW priority.
+4. Secure Agent ID Encoding (StringBuffer):
+    Reverse the cleaned Agent ID using `StringBuffer`.
+    Append a constant secret string: `STAD2025` to the reversed Agent ID.
+5. TimeBased Classification (Decision Making):
+    If time is before 12:00PM, mark as `"Morning Operation"`.
+    Otherwise, mark as `"Afternoon Operation"`.
+6. Final Message Formatting (StringJoiner):
+    Format the final output using `StringJoiner` as:
+     EncryptedAgentID | Operation Name | Priority | TimeSlot
+
+[Agent007] Operation Midnight_Fox 2025/07/12 09:30AM-[Agent231] Operation Silent_Eagle 2025/07/12 02:45PM-[Agent999] Operation Snow_Wolf 2025/07/12 10:10AM
+
+Expected Final Output:
+
+Processed Mission Logs:
+5202DATS700tnegA | Midnight Fox | HIGH | Morning Operation
+5202DATS132tnegA | Silent Eagle | HIGH | Afternoon Operation
+5202DATS999tnegA | Snow Wolf | LOW | Morning Operation
