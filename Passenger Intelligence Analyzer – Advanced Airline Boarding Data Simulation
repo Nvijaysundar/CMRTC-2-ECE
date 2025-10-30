@@ -1,0 +1,75 @@
+Passenger Intelligence Analyzer – Advanced Airline Boarding Data Simulation
+You are part of the Aviation Intelligence & Verification Bureau (AIVB), responsible for auditing international flight passenger logs transmitted by airport terminals.
+Each record arrives as an encoded boarding message, containing essential but unformatted details.
+Your task is to decode, analyze, classify, and securely format each entry using restricted string tools — ensuring no arrays or collections are used.
+
+ Problem Statement:
+
+Develop a Java program that reads a block of raw boarding data and converts it into a structured and secure summary format.
+
+ Input Specification:
+Each message line contains mixed delimiters and coded data as follows:
+
+<PassengerName>*<SeatNo>@<FlightCode>#<BoardingTime>$<Destination>
+
+Example Input:
+
+Myra_Watson*A10@SKY980#09:15AM$LONDON
+Arjun_Kapoor*C22@AIV420#01:55PM$DUBAI
+Sophia_Jones*B19@JET605#07:40PM$NEWYORK
+
+ Processing Requirements:
+
+1. Tokenization (Using StringTokenizer):
+   Each line must be parsed using StringTokenizer with delimiters *, @, #, and $ to extract:
+
+   Passenger Name
+   Seat Number
+   Flight Code
+   Boarding Time
+   Destination
+
+2. String Operations:
+
+   Replace _ with a space in the name.
+   Extract the seat letter (A/B/C…) and number separately from SeatNo.
+   Convert FlightCode to lowercase except the numeric digits.
+   Extract hour from the time (as integer) and decide shift classification:
+
+     Before 12PM → Morning Shift
+     12PM to 5PM → Day Shift
+     After 5PM → Night Shift
+   If Destination contains “LONDON” or “NEWYORK” → mark as "International", else "Regional".
+
+3. StringBuffer Operations:
+
+   Reverse the passenger name using StringBuffer.
+   Append the seat letter and constant code "AIVB2025".
+   Example: Myra Watson → reversed → nostaW aryM → nostaW aryMAAIVB2025.
+
+4. Derived Logic (Decision-Making):
+
+   If seat number > 20 → “Rear Zone Passenger”, else “Front Zone Passenger”.
+   If FlightCode starts with "aiv" → mark as "Government Carrier", else "Commercial Airline".
+   If the Boarding Time ends with “AM” and destination is International → add "Priority Boarding" tag.
+
+5. Final Formatting (StringJoiner):
+   Combine all derived details as:
+
+   EncodedName | Destination | FlightType | Zone | Shift | Status
+   
+ Example Input:
+
+
+Myra_Watson*A10@SKY980#09:15AM$LONDON
+Arjun_Kapoor*C22@AIV420#01:55PM$DUBAI
+Sophia_Jones*B19@JET605#07:40PM$NEWYORK
+
+
+ Expected Output:
+
+Processed Boarding Intelligence Summary:
+nostaW aryMAAIVB2025 | LONDON | Commercial Airline | Front Zone Passenger | Morning Shift | Priority Boarding
+roopaK nujrAA AIVB2025 | DUBAI | Government Carrier | Rear Zone Passenger | Day Shift | Normal Boarding
+senoJ aihpoSBAAIVB2025 | NEWYORK | Commercial Airline | Front Zone Passenger | Night Shift | Normal Boarding
+
