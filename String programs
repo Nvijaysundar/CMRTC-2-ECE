@@ -1,0 +1,415 @@
+Problem 1: Greeting Builder – The Festival Welcome
+Every year during the grand Lantern Festival in Harmony Town, the streets glow with warm amber lights, music fills the air, and families gather to celebrate unity and friendship. 
+At the heart of it all is Ravi, the town’s beloved host, who stands at the towering main gate to personally greet each guest. 
+It’s a centuries-old tradition — a heartfelt greeting spoken aloud with the guest’s name is said to bring good fortune to both the host and the visitor. 
+This year, the guest list is longer than ever, and Ravi fears he may accidentally forget someone’s name or misspeak in the chaos.
+To ensure every welcome is flawless, you must help him craft a program that takes the guest’s name and instantly produces the warm greeting “Hello !”. 
+This way, every visitor will feel seen and honored, and the tradition will remain unbroken.
+Input Format:.
+One line: A string (name)
+Output Format:
+One line: Hello !
+Constraints:
+1 ≤ length of name ≤ 100
+Sample Input 1:
+Amit
+Sample Output 1:
+Hello Amit!
+Sample Input 2:
+Neha
+Sample Output 2:
+Hello Neha!
+ 
+________________________________________
+Problem 2: Length Finder – The Name Scroll
+In the royal archives of Eldoria, tall shelves groan under the weight of ancient scrolls, each containing the names of the kingdom’s citizens. 
+These scrolls are more than just records — they determine social hierarchy, as the number of letters in a name decides one’s ceremonial seat during the kingdom’s grand feasts. 
+Meena, an eager apprentice scribe, has been entrusted with the sacred duty of transcribing the festival guest list. Every name’s length must be recorded without error, 
+for even the smallest mistake could seat a noble in a commoner’s place or cause offense that lasts generations. With the festival only hours away and a line of nobles already waiting to be announced, 
+Meena must calculate the length of each name swiftly and precisely.
+Input Format:
+One line: A string
+Output Format:
+One line: Length: 
+Constraints:
+1 ≤ length of string ≤ 100
+Sample Input 1:
+Sneha
+Sample Output 1:
+Length: 5
+Sample Input 2:
+Arya
+Sample Output 2:
+Length: 4
+ 
+Problem 3: Case Converter – The Royal Proclamation
+In the kingdom of Alphara, every royal proclamation is an event of grandeur. The Queen’s words carry not only authority but also a subtle artistry in their presentation. 
+Capital letters are reserved for declarations of command, demanding attention from the highest noble to the humblest villager. Lowercase letters are used for gentle requests, 
+imbued with kindness and grace. Messengers gallop across the countryside with these proclamations, ensuring they are read exactly as intended. 
+With the royal parade approaching and messages streaming in from distant provinces, the scribes must convert each text precisely into both uppercase and lowercase formats for archival and ceremonial use. 
+Your role is to ensure the Queen’s commands and requests are perfectly reflected in their proper form, preserving the delicate balance of power and poise.
+Input Format:
+One line: A string
+Output Format:
+Uppercase: 
+Lowercase: 
+Constraints:
+1 ≤ length ≤ 100
+Sample Input 1:
+LongLiveTheQueen
+Sample Output 1:
+Uppercase: LONGLIVETHEQUEEN
+Lowercase: longlivethequeen
+Sample Input 2:
+PeaceAndProsperity
+Sample Output 2:
+Uppercase: PEACEANDPROSPERITY
+Lowercase: peaceandprosperity
+________________________________________
+ 
+Problem 4: String Reverser – The Mirror of Myths
+Deep within the mist-shrouded forest of Myra lies the Mirror of Myths, a mystical artifact said to reveal the true nature of anything placed before it. 
+Long ago, wise priests consulted the mirror to uncover hidden truths, believing that reversing a name or phrase could dispel illusions and expose secrets. 
+Travelers now venture into the forest to stand before the mirror and have their words reflected in perfect reverse, as a charm for protection before their journeys. 
+The legend says that even the simplest word, when reversed, holds a secret meaning. You are tasked with capturing the magic of the mirror through code, taking any given string and returning its exact reverse.
+Input Format:
+One line: A string
+Output Format:
+Reversed: 
+Constraints:
+1 ≤ length ≤ 100
+Sample Input 1:
+Hello
+Sample Output 1:
+Reversed: olleH
+Sample Input 2:
+Magic
+Sample Output 2:
+Reversed: cigaM
+ 
+________________________________________
+Problem 5: Word Counter – The Storyteller’s Ledger
+In the bustling heart of Talespur, storytellers gather in the grand bazaar to weave magic with their words. Each tale is sold not by time or volume but by the number of words spoken, 
+a tradition that ensures every syllable is rich with meaning. Rafiq, the most celebrated of them all, commands high prices for his eloquent stories, but only if his word count matches his promise. 
+Merchants, travelers, and children sit rapt before him, hanging on to each phrase. Now, with multiple performances in a day, Rafiq needs a reliable way to count words instantly, 
+ensuring he earns every gold coin he’s due and maintains his reputation as a man of both words and honor.
+Input Format:
+One line: A sentence
+Output Format:
+Word Count: 
+Constraints:
+1 ≤ sentence length ≤ 200
+Sample Input 1:
+The sun rises over the hills
+Sample Output 1:
+Word Count: 6
+Sample Input 2:
+Stories live forever
+Sample Output 2:
+Word Count: 3
+ 
+________________________________________
+Problem 6: Substring Search – The Spy’s Code
+In the shadow-draped city of Veridia, coded messages flow through dimly lit taverns and market stalls like whispers in the wind. Agent Mira, an elite spy, 
+intercepts an unassuming note during her evening patrol. The note may contain a crucial keyword hidden within a sea of casual words — the kind of clue that could turn the tide of a dangerous mission.
+She must quickly determine whether the keyword exists in the message before passing it to her handler. The stakes are high; failure could mean the enemy escapes unnoticed.
+You must help Mira by automating the search for the keyword within any string she intercepts.
+Input Format:
+First line: Full string
+Second line: Substring to search
+Output Format:
+Found / Not Found
+Constraints:
+1 ≤ length ≤ 200
+Sample Input 1:
+The treasure is buried here
+buried
+Sample Output 1:
+Found
+Sample Input 2:
+The treasure is hidden away
+buried
+Sample Output 2:
+Not Found
+ 
+________________________________________
+Problem 7: String Comparison – The Judge’s Decision
+The Great Hall of Titles is a place of formality and precision. Here, disputes over noble names, merchant brands, and royal honors are resolved with absolute exactness. 
+Two parties present their names before the Royal Judge, who compares them letter by letter. A perfect match signifies equality, while the slightest variation can determine victory or loss in a dispute. 
+The judge’s decision carries the weight of law, influencing inheritance, trade rights, and even royal appointments. Your task is to replicate this meticulous comparison, ensuring that no error slips through.
+Input Format:
+First line: String A
+Second line: String B
+Output Format:
+Equal / Not Equal
+Constraints:
+1 ≤ length ≤ 100
+Sample Input 1:
+Apple
+Apple
+Sample Output 1:
+Equal
+Sample Input 2:
+Apple
+Apples
+Sample Output 2:
+Not Equal
+ 
+
+Problem 8: Character Counter – The Scribe’s Tally
+In the quiet halls of the Windmere Scriptorium, the air smells of ink and aged parchment. Scribes, seated at long wooden tables, copy sacred manuscripts by candlelight. 
+Every detail must be exact, down to the number of times a specific character appears. This count verifies the authenticity of the manuscript and ensures no forgeries slip into the archives. 
+A single miscount could ignite disputes between scholars or tarnish the scriptorium’s centuries-old reputation. You must create a program that tallies the exact occurrences of a given character in any text.
+Input Format:
+First line: String
+Second line: Character to count
+Output Format:
+Count: 
+Constraints:
+1 ≤ length ≤ 200
+Sample Input 1:
+Banana
+a
+Sample Output 1:
+Count: 3
+Sample Input 2:
+Banana
+b
+Sample Output 2:
+Count: 0
+ 
+________________________________________
+Problem 9: Palindrome Checker – The Temple’s Test
+In the mystical Temple of Echoes, where sound seems to bend and return upon itself, initiates must pass the Palindrome Test to prove their mental clarity and focus.
+A palindrome — a word or phrase that reads the same forwards and backwards — is seen as a symbol of balance and harmony. 
+The High Priest watches intently as each candidate presents their chosen phrase. Success earns them a place among the temple’s scholars; failure sends them back to study in silence. 
+You must write a program that determines whether a given string is a true palindrome.
+Input Format:
+One line: String
+Output Format:
+Palindrome / Not Palindrome
+Constraints:
+1 ≤ length ≤ 200
+Sample Input 1:
+madam
+Sample Output 1:
+Palindrome
+Sample Input 2:
+hello
+Sample Output 2:
+Not Palindrome
+ 
+________________________________________
+Problem 10: Vowel Remover – The Silent Song
+The city of Melodia thrives on music, but some compositions require moments of silence woven into the melody. 
+These silent verses are crafted by removing all vowels, leaving only consonants to create a percussive rhythm that resonates with the city’s cobblestone streets. 
+Musicians call it the “Silent Song,” a technique said to reveal the heartbeat of the music beneath the melody. Composers, eager to experiment, 
+need a quick way to transform any given line into its vowel-less form. You must design a program that strips vowels from a string, allowing the Silent Song to be played.
+Input Format:
+One line: String
+Output Format:
+String without vowels
+Constraints:
+1 ≤ length ≤ 200
+Sample Input 1:
+beautiful
+Sample Output 1:
+btfl
+Sample Input 2:
+melody
+Sample Output 2:
+mldy
+
+
+Problem 1: Palindrome Checker – The Village Mirror Test
+In a quiet hillside village, there is an old stone mirror placed at the town square. It’s said to have magical properties — if you speak a word into it, the mirror whispers back the same word in reverse. Villagers believe that if the reversed word is exactly the same as the original, it is blessed by the "Spirit of Symmetry" and called a palindrome.
+One day, young Riya finds an old scroll with a strange word written on it. She wants to know if the scroll’s word is a palindrome so she can decide whether to keep it in her treasure box.
+Input Format:
+One line: A string
+Output Format:
+Palindrome or Not Palindrome
+Sample Input 1:
+madam
+Sample Output 1:
+Palindrome
+Sample Input 2:
+river
+Sample Output 2:
+Not Palindrome
+ 
+________________________________________
+Problem 2: Anagram Checker – The Librarian’s Puzzle
+In an ancient library, the head librarian Shreya finds two book titles written in faded ink. The titles seem unrelated, but the librarian suspects that they are anagrams — words made by rearranging the letters of another.
+The tradition of the library says that if two titles are anagrams, they are stored together in the “Twin Words” section. The problem is, spaces and letter casing don’t matter here — "Silent" and "Listen" would be considered twins.
+Input Format:
+Two lines: Each containing a string
+Output Format:
+Anagram or Not Anagram
+Sample Input 1:
+Listen
+Silent
+Sample Output 1:
+Anagram
+Sample Input 2:
+Golden
+Dragon
+Sample Output 2:
+Not Anagram
+ 
+________________________________________
+Problem 3: Longest Word Finder – The Royal Scroll of Veridia
+In the kingdom of Veridia, every sunrise begins with a special ritual. 
+The chief messenger delivers a parchment scroll to the King, containing a poetic description of the day’s events, the weather, or important political affairs. 
+The King has a peculiar belief that within each scroll lies a "word of destiny" — the longest word in the entire sentence.
+The palace astrologer claims that this word reveals what the King must focus on for the day. The King depends on his scribes to identify this special word before his morning tea.
+Input Format:
+One line: A sentence (words separated by spaces)
+Output Format:
+One line: Longest word
+Sample Input 1:
+I love programming a lot
+Sample Output 1:
+programming
+Sample Input 2:
+Dogs run fast
+Sample Output 2:
+Dogs
+ 
+________________________________________
+Problem 4: Frequency Counter – The Crystal of Echoes
+In a hidden mountain cave lies the legendary Crystal of Echoes, a relic said to repeat the most powerful letter hidden in any magical chant. 
+Priya, a young apprentice mage, discovers a crystal fragment inscribed with runes. The Master Mage tells her:
+“The rune that echoes most is the one the crystal favors. Find it, and the spell shall awaken.”
+Priya’s challenge is to carefully read the word, count how often each letter appears, and determine the most frequent character. 
+The letters are treated equally, whether uppercase or lowercase, but strange symbols and numbers mean nothing to the crystal.
+Input Format:
+One line: A string
+Output Format:
+One line: Most frequent character
+Sample Input 1:
+programming
+Sample Output 1:
+g
+Sample Input 2:
+abcabc
+Sample Output 2:
+a
+ 
+________________________________________
+Problem 5: String Shifter – The Merchant’s Cipher Wheel
+Deep in the heart of the coastal city of Zafaria, merchants once used a mechanical cipher wheel to encode their messages before sending them by ship. 
+The wheel would take a word or phrase and rotate its letters a certain number of steps to the right, wrapping the end characters back to the front.
+Kiran, a historian, discovers one such wheel along with a parchment containing a scrambled message. To read it, he must determine the correct rotation value k and reconstruct the original phrase.
+Input Format:
+Two lines:
+Line 1: A string
+Line 2: Integer k
+Output Format:
+One line: Rotated string
+Sample Input 1:
+hello
+2
+Sample Output 1:
+lohel
+Sample Input 2:
+abcdef
+1
+Sample Output 2:
+fabcde
+ 
+________________________________________
+Problem 6: Word Swapper – The Contract Trick
+In the desert marketplace of Al-Madina, merchants often draft long agreements to seal trades. 
+But among them is a cunning merchant named Isha, who knows a simple trick: if she swaps the first and last words in the agreement’s sentence, the meaning subtly changes — sometimes in her favor.
+One morning, she receives a deal written in the form of a single sentence. She suspects that swapping the first and last words might give her an advantage.
+Input Format:
+One line: A sentence (at least two words)
+Output Format:
+One line: Modified sentence
+Sample Input 1:
+Hello from GPT
+Sample Output 1:
+GPT from Hello
+Sample Input 2:
+Trade brings prosperity
+Sample Output 2:
+prosperity brings Trade
+ 
+________________________________________
+Problem 7: Unique Character Checker – The Vault’s Secret Lock
+In a remote research facility, there is a vault protected by an ancient digital lock. Manav, the head engineer, 
+knows that the lock only accepts passwords where every character is unique — no repeats are tolerated.
+You’ve been given a candidate password, and you must verify if it passes the “uniqueness” rule before Manav tries it on the vault.
+Input Format:
+One line: A string
+Output Format:
+Unique or Duplicate
+Sample Input 1:
+lamp
+Sample Output 1:
+Unique
+Sample Input 2:
+apple
+Sample Output 2:
+Duplicate
+ 
+________________________________________
+Problem 8: Sentence Reverser – The Oracle’s Prophecy
+Far away in the Temple of Winds, an oracle delivers her prophecies in an unusual style — she speaks each sentence backwards by words.
+She claims that reversing the order of words conceals the prophecy’s true meaning from unworthy ears.
+A visiting scholar, Swetha, wishes to document one of these prophecies, but she needs it rearranged into the reversed order so it matches the oracle’s style.
+Input Format:
+One line: A sentence
+Output Format:
+One line: Sentence with words reversed
+Sample Input 1:
+I love Python
+Sample Output 1:
+Python love I
+Sample Input 2:
+Magic flows here
+Sample Output 2:
+here flows Magic
+ 
+________________________________________
+Problem 9: Substring Counter – The Market Crier’s Call
+In the bustling capital’s Grand Bazaar, a market crier yells out short slogans repeatedly to attract customers. 
+Rohit, a journalist, is tasked with counting exactly how many times a specific word appears in the crier’s speech.
+It’s important to note that the count is case-sensitive — “Apple” and “apple” are not the same.
+Input Format:
+Two lines:
+Line 1: Sentence
+Line 2: Word to search
+Output Format:
+One line: Integer count
+Sample Input 1:
+hello hello world
+hello
+Sample Output 1:
+2
+Sample Input 2:
+apple banana apple banana
+banana
+Sample Output 2:
+2
+ 
+________________________________________
+Problem 10: ASCII Sum – The Secret Scroll
+Akhil, a scholar of ancient languages, is studying a scroll that hides numbers within words. 
+Each character in the scroll has a secret ASCII value, and when all the values of a word are added together, 
+the total reveals a “power level” that determines its magical potency.
+Your job is to calculate the sum of ASCII values for every character in a given word.
+Input Format:
+One line: A string
+Output Format:
+One line: Integer sum
+Sample Input 1:
+abc
+Sample Output 1:
+294
+Sample Input 2:
+Hi
+Sample Output 2:
+177
+
+
