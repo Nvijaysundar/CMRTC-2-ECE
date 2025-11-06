@@ -1,0 +1,1470 @@
+Problem 1 : The Lost Parcel Tag
+A courier company assigns unique tracking numbers from 1 to N for each parcel. However, during an audit, one of the tags went missing. 
+You are given an array of size N−1 that contains all tags except the missing one. Your task is to find the missing tag using only array operations. 
+You are not allowed to use any additional data structures like hash maps or sets.
+Objective:
+ Determine the missing number in a sequence from 1 to N using only array operations.
+Input:
+●	First line: Integer N — the total number of parcels.
+
+●	Second line: N−1 space-separated integers — the available tracking numbers.
+
+Output:
+●	A single integer — the missing tracking number.
+
+Constraints:
+●	2 ≤ N ≤ 1000
+
+●	1 ≤ tracking[i] ≤ N
+
+●	All numbers are distinct
+
+●	Exactly one number between 1 and N is missing
+
+Sample Input 1:
+ 5
+ 1 2 4 5
+Sample Output 1:
+ 3
+Sample Input 2:
+ 4
+ 2 3 1
+Sample Output 2:
+ 4
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 2
+ 1
+ Output:
+ 2
+Test Case 2:
+ Input:
+ 3
+ 1 3
+ Output:
+ 2
+Test Case 3:
+ Input:
+ 10
+ 1 2 3 4 5 6 7 8 9
+ Output:
+ 10
+Test Case 4:
+ Input:
+ 6
+ 6 5 4 2 1
+ Output:
+ 3
+Test Case 5:
+ Input:
+ 1000
+ (all numbers from 1 to 1000 except 999, shuffled)
+ Output:
+ 999
+
+
+
+Problem 2 : Reverse the Conveyor Order
+A small warehouse uses a conveyor belt to move boxes in a specific order. At the end of the day, the boxes need to be reversed in order for maintenance.
+You are given the current order of boxes on the conveyor (represented by an array of integers, where each integer denotes a unique box ID). 
+Your task is to reverse the order of the array in-place (i.e., without using extra arrays or data structures).
+Objective:
+ Given an array of N integers, reverse the array in-place using only array operations.
+Input:
+●	First line: Integer N — the number of boxes on the conveyor
+
+●	Second line: N space-separated integers — the box IDs in current order
+
+Output:
+●	Print the reversed order of the box IDs as space-separated integers
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	−10⁹ ≤ box[i] ≤ 10⁹
+
+Sample Input 1:
+ 5
+ 10 20 30 40 50
+Sample Output 1:
+ 50 40 30 20 10
+Sample Input 2:
+ 1
+ 42
+Sample Output 2:
+ 42
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 2
+ 5 7
+ Output:
+ 7 5
+
+Test Case 2:
+
+ Input:
+ 4
+ 1 -2 -3 4
+ Output:
+ 4 -3 -2 1
+Test Case 3:
+ Input:
+ 6
+ 1000 999 998 997 996 995
+ Output:
+ 995 996 997 998 999 1000
+Test Case 4:
+ Input:
+ 3
+ 0 0 0
+ Output:
+ 0 0 0
+Test Case 5:
+ Input:
+ 10
+ 1 2 3 4 5 6 7 8 9 10
+ Output:
+ 10 9 8 7 6 5 4 3 2 1
+
+
+Problem 3 : Counting the Defective Items
+
+A quality control team is scanning a line of products, each marked with an integer label. A product with label 0 is considered defective. 
+Your job is to count the total number of defective products using only array operations.
+Objective:
+ Count how many times the number 0 appears in the given array.
+Input:
+●	First line: Integer N — the number of products
+
+●	Second line: N space-separated integers — labels of the products
+
+Output:
+●	A single integer — the number of defective items (i.e., count of 0s)
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	−10⁹ ≤ label[i] ≤ 10⁹
+
+Sample Input 1:
+ 6
+ 1 0 0 2 3 0
+Sample Output 1:
+ 3
+Sample Input 2:
+ 4
+ 5 1 3 2
+Sample Output 2:
+ 0
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 0
+ Output:
+ 1
+Test Case 2:
+ Input:
+ 3
+ 0 0 0
+ Output:
+ 3
+Test Case 3:
+ Input:
+ 5
+ 10 20 30 40 50
+ Output:
+ 0
+Test Case 4:
+ Input:
+ 7
+ 0 -1 0 -2 0 -3 0
+ Output:
+ 4
+Test Case 5:
+ Input:
+ 10
+ 0 1 2 3 4 5 6 7 8 9
+ Output:
+ 1
+
+
+Problem 4 (Easy): Counting Customers Below Threshold
+
+A supermarket records the number of items each customer purchases. The manager wants to know how many customers bought less than or equal to a certain threshold
+number of items (say, promotional customers). You are given an array of item counts per customer and a threshold value. Count how many customers bought items less than or equal to the threshold.
+Objective:
+Count the number of array elements that are less than or equal to a given threshold.
+Input:
+●	First line: Integer N — number of customers
+
+●	Second line: N space-separated integers — number of items each customer purchased
+
+●	Third line: Integer T — the threshold
+
+Output:
+●	A single integer — number of customers who bought T or fewer items
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	0 ≤ items[i] ≤ 10⁶
+
+●	0 ≤ T ≤ 10⁶
+
+Sample Input 1:
+ 6
+ 2 5 1 7 4 3
+ 4
+Sample Output 1:
+ 4
+Sample Input 2:
+ 5
+ 10 20 30 40 50
+ 25
+Sample Output 2:
+ 2
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 0
+ 0
+ Output:
+ 1
+Test Case 2:
+ Input:
+ 4
+ 0 0 0 0
+ 1
+ Output:
+ 4
+Test Case 3:
+ Input:
+ 3
+ 1 2 3
+ 0
+ Output:
+ 0
+Test Case 4:
+ Input:
+ 5
+ 4 4 4 4 4
+ 4
+ Output:
+ 5
+Test Case 5:
+ Input:
+ 8
+ 10 9 8 7 6 5 4 3
+ 6
+ Output:
+ 4
+
+
+Problem 5 : Find First Occurrence of a Faulty Reading
+In a temperature monitoring system, sensors record temperature readings periodically and store them in an array. 
+A reading of −999 is used to indicate a faulty sensor reading. Your task is to find the index (0-based) of the first occurrence of a faulty reading. If no such reading exists, print -1.
+Objective:
+ Find the index of the first occurrence of −999 in the array.
+Input:
+●	First line: Integer N — the number of readings
+
+●	Second line: N space-separated integers — the temperature readings
+
+Output:
+●	A single integer — the index of the first −999 in the array, or −1 if not found
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	−10⁹ ≤ reading[i] ≤ 10⁹
+
+Sample Input 1:
+ 6
+ 23 21 −999 20 22 24
+Sample Output 1:
+ 2
+Sample Input 2:
+ 4
+ 30 28 27 29
+Sample Output 2:
+ −1
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ −999
+ Output:
+ 0
+Test Case 2:
+ Input:
+ 3
+ −999 −999 −999
+ Output:
+ 0
+Test Case 3:
+ Input:
+ 5
+ 0 0 0 0 −999
+ Output:
+ 4
+Test Case 4:
+ Input:
+ 7
+ 25 26 27 −1000 30 29 −999
+ Output:
+ 6
+Test Case 5:
+ Input:
+ 8
+ −1 −2 −3 −4 −5 −6 −7 −8
+ Output:
+ −1
+
+Problem 6 (Easy): Counting Even Numbers in an Array
+
+You are given an array that represents the ages of customers visiting a store throughout the day. 
+The store manager wants to know how many customers had even-numbered ages for a survey. You are required to write a program to count how many numbers in the array are even.
+Objective:
+ Count the number of even elements in the array.
+Input:
+●	First line: Integer N — the number of customer entries
+
+●	Second line: N space-separated integers — the ages of customers
+
+Output:
+●	A single integer — number of even ages in the array
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	0 ≤ age[i] ≤ 100
+
+Sample Input 1:
+ 6
+ 22 35 18 41 28 50
+Sample Output 1:
+ 4
+Sample Input 2:
+ 4
+ 21 23 25 27
+Sample Output 2:
+ 0
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 2
+Output:
+ 1
+Test Case 2:
+ Input:
+ 5
+ 0 0 0 0 0
+Output:
+ 5
+Test Case 3:
+ Input:
+ 6
+ 1 2 3 4 5 6
+Output:
+ 3
+Test Case 4:
+ Input:
+ 3
+ 99 100 101
+Output:
+ 1
+Test Case 5:
+ Input:
+ 10
+ 1 3 5 7 9 11 13 15 17 19
+Output:
+ 0
+
+
+
+
+Problem 7 : Highest Marks in the Classroom
+
+You are helping a school teacher who just completed grading a class test. The scores of all students have been entered into a digital record.
+The teacher wants to quickly find out which student scored the highest to reward them in front of the class.
+Objective:
+ Find and print the highest score from the list of student scores.
+Input:
+●	First line: An integer N — number of students
+
+●	Second line: N space-separated integers — the scores of the students
+
+Output:
+●	A single integer — the highest score
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	−10⁶ ≤ score[i] ≤ 10⁶
+
+Sample Input 1:
+ 5
+ 45 92 61 38 90
+Sample Output 1:
+ 92
+Sample Input 2:
+ 4
+ −5 −10 −3 −1
+Sample Output 2:
+ −1
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 12
+Output:
+ 12
+Test Case 2:
+ Input:
+ 6
+ 100 99 98 97 96 95
+Output:
+ 100
+Test Case 3:
+ Input:
+ 6
+ −100 −99 −98 −97 −96 −95
+Output:
+ −95
+Test Case 4:
+ Input:
+ 10
+ 0 0 0 0 0 0 0 0 0 0
+Output:
+ 0
+
+
+Problem 8 : Evaluating Alternate Checkpoints
+
+A group of hikers is on a trail that has multiple checkpoints. Each checkpoint logs a number representing the terrain difficulty score. 
+The organizer wants to analyze a specific pattern — only the scores logged at alternate checkpoints, starting from the very first one.
+You are given an array of N integers representing the difficulty scores in the order they were encountered.
+Your task is to compute a metric that only considers values at every alternate checkpoint, beginning with the first.
+Objective:
+ From the array, compute the total of elements at alternate positions starting from the first index (0, 2, 4, …).
+Input:
+●	First line: Integer N — the total number of checkpoints
+
+●	Second line: N space-separated integers — the terrain difficulty scores
+
+Output:
+●	A single integer — the required computed value
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	−10⁶ ≤ score[i] ≤ 10⁶
+
+Sample Input 1:
+ 6
+ 7 8 10 15 20 25
+Sample Output 1:
+ 37
+Sample Input 2:
+ 4
+ −5 −10 −15 −20
+Sample Output 2:
+ −20
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 99
+Output:
+ 99
+Test Case 2:
+ Input:
+ 2
+ 100 200
+Output:
+ 100
+Test Case 3:
+ Input:
+ 3
+ 0 0 0
+Output:
+ 0
+Test Case 4:
+ Input:
+ 5
+ 5 −5 5 −5 5
+Output:
+ 15
+Test Case 5:
+ Input:
+ 10
+ 1 2 3 4 5 6 7 8 9 10
+Output:
+ 25
+Solutions:
+
+Problem 9 : Checkpoint Deviation Tracker
+
+During a cross-country race, a drone records the elevation deviation at each checkpoint. For some reason, the data may contain both positive and negative values,
+indicating upward and downward terrain shifts. The race organizers want a simple analysis: count how many checkpoints reported a value less than or equal to zero.
+Objective:
+ Count the number of elements in the array that are less than or equal to zero.
+Input:
+●	First line: Integer N — the number of checkpoints
+
+●	Second line: N space-separated integers representing elevation deviation values
+
+Output:
+●	A single integer — the count of non-positive deviation values
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	−10⁶ ≤ deviation[i] ≤ 10⁶
+
+Sample Input 1:
+ 6
+ 5 -2 0 -7 3 -1
+Sample Output 1:
+ 4
+Sample Input 2:
+ 3
+ 10 20 30
+Sample Output 2:
+ 0
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 0
+Output:
+ 1
+Test Case 2:
+ Input:
+ 2
+ -1000000 1000000
+Output:
+ 1
+Test Case 3:
+ Input:
+ 5
+ -5 -4 -3 -2 -1
+Output:
+ 5
+Test Case 4:
+ Input:
+ 6
+ 0 0 0 0 0 0
+Output:
+ 6
+
+
+
+Problem 10 : Drone Altitude Logger
+A team is testing autonomous delivery drones that record their altitude at every second during a trial flight. The altitudes are stored in a linear array. 
+The drone is considered to have flown “below threshold” if its altitude is below 100 meters.
+To evaluate safety compliance, your task is to determine how many altitude readings were below the safety threshold.
+Objective:
+ Count how many values in the array are less than 100.
+—
+Input:
+●	First line: Integer N — number of altitude readings
+
+●	Second line: N space-separated integers representing the altitudes in meters
+
+Output:
+●	A single integer — the number of altitude readings below 100
+
+Constraints:
+●	1 ≤ N ≤ 1000
+
+●	-10^6 ≤ altitude[i] ≤ 10^6
+
+—
+Sample Input 1:
+
+6
+120 95 87 130 100 60
+
+Sample Output 1:
+
+3
+
+Sample Input 2:
+
+3
+101 150 180
+
+Sample Output 2:
+
+0
+
+Edge and Hidden Test Cases:
+Test Case 1:
+Input:
+1
+99
+Output:
+1
+
+Test Case 2:
+
+Input:
+4
+100 100 100 100
+Output:
+0
+
+Test Case 3:
+
+Input:
+5
+-50 0 20 99 101
+Output:
+4
+
+
+Problem 1:
+
+During a school farewell event, students are pooling their individual gift budgets to buy a shared gift. A special gift is available at a fixed price,
+and the organizers want to know if any two students can combine their budgets to match this exact amount.
+Objective:
+Given an array of integers representing student budgets and a target gift price, determine whether any two distinct values from the array add up to the target. 
+You may not use extra space (e.g., frequency arrays, hash maps). Sorting the array and using a two-pointer approach is allowed.
+Input Format:
+First line: Integer N (2 ≤ N ≤ 10^5), number of students.
+Second line: N space-separated integers (1 ≤ budget[i] ≤ 10^5), the gift budgets.
+Third line: Integer T (1 ≤ T ≤ 2 × 10^5), the price of the gift.
+
+Output Format:
+Print "true" if a valid pair exists.
+Print "false" otherwise.
+
+Constraints:
+2 ≤ N ≤ 10^5
+1 ≤ budget[i] ≤ 10^5
+1 ≤ T ≤ 2 × 10^5
+
+Sample Input 1:
+ 5
+ 1 4 6 8 10
+ 14
+Sample Output 1:
+ true
+Explanation:
+Sorted array: [1, 4, 6, 8, 10] → Pair (4, 10) adds up to 14.
+Sample Input 2:
+ 4
+ 3 3 3 3
+ 10
+Sample Output 2:
+ false
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 2
+ 1 2
+ 3
+ Output:
+ true
+Test Case 2:
+ Input:
+ 2
+ 1 1
+ 3
+ Output:
+ false
+Test Case 3:
+ Input:
+ 3
+ 1 2 3
+ 6
+ Output:
+ false
+Test Case 4:
+ Input:
+ 6
+ 5 5 5 5 5 5
+ 10
+ Output:
+ true
+Test Case 5:
+ Input:
+ 5
+ 1 1 1 1 1
+ 2
+ Output:
+ true
+Test Case 6:
+ Input:
+ 3
+ 10 20 30
+ 60
+ Output:
+ false
+Test Case 7:
+ Input:
+ 3
+ 5 0 5
+ 5
+ Output:
+ true
+Test Case 8:
+ Input:
+ 4
+ 100000 100000 1 1
+ 200000
+ Output:
+ true
+Test Case 9:
+ Input:
+ 5
+ 10 20 30 40 50
+ 100
+ Output:
+ true
+Test Case 10:
+ Input:
+ 3
+ 100 200 300
+ 100
+ Output:
+ false
+
+
+
+Problem 2: Dessert Table Rearrangement
+
+A bakery is preparing a long table of desserts for a party. The table has N spots, and each dessert has a sweetness rating. 
+The bakery wants to move the dessert with the maximum sweetness to the end of the table and the dessert with the minimum sweetness to the beginning of the table — 
+but only by swapping (not using another table or copying).
+Help them rearrange the desserts so that the minimum sweet dessert is at the beginning and the maximum sweet dessert is at the end of the array. Other elements can remain in any order.
+Objective:
+ Rearrange the array in-place such that:
+The smallest element is placed at index 0.
+The largest element is placed at index N−1.
+
+Do not use any extra array for swapping.
+Input Format:
+First line: Integer N (2 ≤ N ≤ 10^5) — number of desserts.
+Second line: N space-separated integers denoting sweetness ratings (0 ≤ rating ≤ 10^5)
+
+Output Format:
+Print the modified array after swapping min and max elements to their desired positions.
+
+Constraints:
+2 ≤ N ≤ 10^5
+0 ≤ rating ≤ 10^5
+
+Sample Input 1:
+ 6
+ 10 20 5 8 30 7
+Sample Output 1:
+ 5 20 10 8 7 30
+Sample Input 2:
+ 5
+ 3 3 3 3 3
+Sample Output 2:
+ 3 3 3 3 3
+Explanation:
+ In the first case, minimum (5) goes to index 0, and maximum (30) goes to index 5.
+ In the second case, all elements are the same, so no change is needed.
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 2
+ 9 1
+ Output:
+ 1 9
+Test Case 2:
+ Input:
+ 3
+ 100 20 300
+ Output:
+ 20 100 300
+Test Case 3:
+ Input:
+ 4
+ 10 20 5 30
+ Output:
+ 5 20 10 30
+Test Case 4:
+ Input:
+ 6
+ 1 2 3 4 5 6
+ Output:
+ 1 2 3 4 6 5
+Test Case 5:
+ Input:
+ 5
+ 50 40 30 20 10
+ Output:
+ 10 40 30 20 50
+Test Case 6:
+ Input:
+ 4
+ 7 7 1 7
+ Output:
+ 1 7 7 7
+Test Case 7:
+ Input:
+ 3
+ 0 100000 0
+ Output:
+ 0 0 100000
+Test Case 8:
+ Input:
+ 6
+ 2 4 2 1 6 5
+ Output:
+ 1 4 2 2 5 6
+Test Case 9:
+ Input:
+ 7
+ 2 3 4 5 6 1 0
+ Output:
+ 0 3 4 5 6 1 2
+Test Case 10:
+ Input:
+ 8
+ 9 9 9 9 9 1 9 9
+ Output:
+ 1 9 9 9 9 9 9 9
+
+
+Problem 3: The Mountain Trail Check
+A group of hikers is planning a trek on a trail that should go uphill first and then downhill — like climbing a mountain and then descending.
+Each section of the trail has a height rating stored in an array.
+The guide wants to verify if the trail strictly increases to a peak and then strictly decreases — without any flat areas or plateaus.
+Your task is to write a program that checks if the array of heights represents a valid mountain trail.
+Objective:
+ Return true if the array:
+Has at least 3 elements
+Strictly increases until a single peak, and
+Then strictly decreases after the peak
+
+Otherwise, return false.
+Input Format:
+First line: Integer N (3 ≤ N ≤ 10^5) — number of trail segments
+Second line: N space-separated integers representing trail heights (0 ≤ height ≤ 10^5)
+
+Output Format:
+Output "true" if the trail is a valid mountain; otherwise, output "false"
+
+Constraints:
+3 ≤ N ≤ 10^5
+0 ≤ height ≤ 10^5
+
+Sample Input 1:
+ 7
+ 1 2 3 5 4 2 1
+Sample Output 1:
+ true
+Sample Input 2:
+ 5
+ 1 2 3 3 2
+Sample Output 2:
+ false
+Explanation:
+ The first input climbs strictly to a peak (5) and then descends strictly.
+ The second input has a flat area (3 → 3), so it's invalid.
+Edge & Hidden Test Cases:
+Test Case 1:
+ Input:
+ 3
+ 1 2 3
+ Output:
+ false
+Test Case 2:
+ Input:
+ 3
+ 3 2 1
+ Output:
+ false
+Test Case 3:
+ Input:
+ 6
+ 0 2 4 3 2 1
+ Output:
+ true
+Test Case 4:
+ Input:
+ 4
+ 1 3 3 1
+ Output:
+ false
+Test Case 5:
+ Input:
+ 5
+ 1 2 1 2 1
+ Output:
+ false
+Test Case 6:
+ Input:
+ 7
+ 0 1 2 3 2 1 0
+ Output:
+ true
+Test Case 7:
+ Input:
+ 8
+ 2 3 5 6 6 4 2 1
+ Output:
+ false
+Test Case 8:
+ Input:
+ 10
+ 1 3 6 9 12 15 13 8 4 1
+ Output:
+ true
+Test Case 9:
+ Input:
+ 3
+ 5 5 5
+ Output:
+ false
+Test Case 10:
+ Input:
+ 5
+ 1 3 5 3 5
+ Output:
+ false
+
+
+
+Problem 4: Counting Smaller Boxes on the Left
+Ravi runs a packaging warehouse with several boxes lined up in a row, each with a different weight. 
+For quality assurance, he wants to check how many boxes on the left of each box are strictly lighter than the current box.
+Objective:
+ For each element in the array, count how many elements before it (to its left) are smaller than it.
+Input Format:
+First line: An integer N (1 ≤ N ≤ 10^3) — number of boxes.
+Second line: N space-separated integers — weights of boxes.
+
+Output Format:
+Output N space-separated integers, where each integer represents the count of boxes to the left of the current box that are strictly smaller than it.
+
+Constraints:
+1 ≤ N ≤ 1000
+1 ≤ weight ≤ 10^5
+
+Sample Input 1:
+ 5
+ 3 1 4 2 5
+Sample Output 1:
+ 0 0 2 1 4
+Explanation:
+For 3 → 0 boxes to its left
+For 1 → 0 boxes to its left
+For 4 → 3 and 1 are smaller → 2
+For 2 → only 1 is smaller → 1
+For 5 → 3, 1, 4, 2 are smaller → 4
+
+Sample Input 2:
+ 4
+ 1 2 3 4
+Sample Output 2:
+ 0 1 2 3
+────────────────────────────────────────────
+Edge and Hidden Test Cases:
+Test Case 1:
+ Input:
+ 6
+ 6 5 4 3 2 1
+ Output:
+ 0 0 0 0 0 0
+Test Case 2:
+ Input:
+ 5
+ 1 3 2 3 4
+ Output:
+ 0 1 1 2 4
+Test Case 3:
+ Input:
+ 3
+ 10 20 30
+ Output:
+ 0 1 2
+Test Case 4:
+ Input:
+ 4
+ 4 4 4 4
+ Output:
+ 0 0 0 0
+Test Case 5:
+ Input:
+ 1
+ 42
+ Output:
+ 0
+]
+
+
+Problem 5:
+Aarav works as an architect in a city filled with skyscrapers. From his office window, he can see a long row of buildings lined up from left to right, each with a different height.
+Aarav wants to know, for each building, how many buildings to its left are taller than it and are also visible from his point of view.
+A building is considered visible if there is no other building between it and the current building that is taller or equal to it (blocking the view).
+Objective:
+ For each building, count how many taller and visible buildings are to its left.
+
+Input Format:
+ First line: An integer N (1 ≤ N ≤ 10³) — number of buildings.
+ Second line: N space-separated integers — heights of buildings.
+Output Format:
+ Output N space-separated integers, where each integer represents the number of taller and visible buildings to the left of the current building.
+Constraints:
+ 1 ≤ N ≤ 1000
+ 1 ≤ height ≤ 10⁵
+Sample Input 1:
+6
+5 3 8 4 6 2
+
+Sample Output 1:
+0 1 0 1 1 2
+
+Explanation:
+Building 5 → no buildings to the left → 0
+Building 3 → 5 is taller and visible → 1
+Building 8 → no taller visible buildings to the left → 0
+Building 4 → 8 is taller and visible → 1
+Building 6 → 8 is taller and visible → 1
+Building 2 → 5 and 8 are taller and visible → 2
+
+Sample Input 2:
+5
+10 4 6 3 8
+
+Sample Output 2:
+0 1 1 2 1
+
+Edge and Hidden Test Cases:
+Test Case 1:
+makefile
+CopyEdit
+Input:
+4
+1 2 3 4
+Output:
+0 0 0 0
+
+
+Test Case 2:
+Input:
+5
+10 10 10 10 10
+Output:
+0 0 0 0 0
+
+Test Case 3:
+5
+9 7 8 6 10
+Output:
+0 1 1 2 0
+
+Test Case 4:
+Input:
+1
+42
+Output:
+0
+
+Test Case 5:
+Input:
+6
+6 4 5 3 7 2
+Output:
+0 1 1 2 0 2
+
+
+
+Problem 6: Balanced Difference
+
+Saanvi has an array of integers. She wants to know whether the sum of elements at even indices is equal to the sum of elements at odd indices. She calls this a “balanced difference”.
+She asks for your help to determine whether this balance exists in her array.
+Objective:
+ Determine if the sum of elements at even indices is equal to the sum at odd indices.
+Input Format:
+First line: An integer N (1 ≤ N ≤ 10^4) – the number of elements in the array.
+Second line: N space-separated integers representing the array.
+
+Output Format:
+Print "true" if the sums are equal, otherwise print "false".
+
+
+
+Constraints:
+1 ≤ N ≤ 10^4
+-10^5 ≤ arr[i] ≤ 10^5
+
+Sample Input 1:
+ 4
+ 2 3 4 1
+Sample Output 1:
+ true
+Explanation:
+ Sum at even indices = arr[0] + arr[2] = 2 + 4 = 6
+ Sum at odd indices = arr[1] + arr[3] = 3 + 1 = 4
+ → Not equal → Output: false
+Sample Input 2:
+ 6
+ 1 2 3 4 5 6
+Sample Output 2:
+ false
+Sample Input 3:
+ 2
+ 5 5
+Sample Output 3:
+ true
+Edge & Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 0
+Output:
+ true
+ Explanation: Only one index, no odd index, so considered balanced.
+Test Case 2:
+ Input:
+ 3
+ -5 5 -5
+Output:
+ false
+Test Case 3:
+ Input:
+ 4
+ -5 5 5 -5
+Output:
+ true
+Test Case 4:
+ Input:
+ 6
+ 1 2 3 4 5 6
+Output:
+ false
+Test Case 5:
+ Input:
+ 8
+ 1 -1 1 -1 1 -1 1 -1
+Output:
+ true
+
+
+Problem 7: Rolling Maximum Pairs
+ Ishaan was playing with an array of integers. He discovered that every two consecutive numbers could be compared, and their maximum could be recorded. For example, for array [3, 6, 1, 4], 
+he could form a new array [6, 6, 4] by taking the maximum of every consecutive pair. Ishaan wants to build this new array and analyze it. Can you help him write a program to do this?
+Objective:
+Given an array of integers, construct a new array where each element is the maximum of two consecutive elements from the original array.
+Input Format:
+First line: Integer N (2 ≤ N ≤ 10^4) – number of elements in the array.
+Second line: N space-separated integers.
+
+Output Format:
+Print N−1 space-separated integers – the resulting array of maximums between consecutive pairs.
+
+Constraints:
+2 ≤ N ≤ 10^4
+-10^5 ≤ arr[i] ≤ 10^5
+
+Sample Input 1:
+ 5
+ 4 7 2 9 1
+Sample Output 1:
+ 7 7 9 9
+Explanation:
+max(4, 7) = 7
+max(7, 2) = 
+max(2, 9) = 9
+max(9, 1) = 9
+
+Sample Input 2:
+ 3
+ -1 -5 -3
+Sample Output 2:
+ -1 -3
+Edge & Hidden Test Cases:
+Test Case 1:
+ Input:
+ 2
+ 1 1
+Output:
+ 1
+Test Case 2:
+ Input:
+ 6
+ 5 4 3 2 1 0
+Output:
+ 5 4 3 2 1
+Test Case 3:
+ Input:
+ 4
+ -3 -2 -1 0
+Output:
+ -2 -1 0
+Test Case 4:
+ Input:
+ 5
+ 100000 -100000 99999 -99999 12345
+Output:
+ 100000 99999 99999 12345
+Test Case 5:
+ Input:
+ 3
+ 0 0 0
+Output:
+ 0 0
+
+
+Problem 8: Almost Sorted
+Ravi, an intern at a company, was given a task to check if an array is already sorted in non-decreasing order or if it could be made sorted by swapping at most one pair of elements.
+He found it easy when the array was clearly unsorted, but tricky when just one wrong pair messed up the order. Can you help Ravi automate this?
+Objective:
+ Given an array of integers, determine whether it is already sorted in non-decreasing order or can be made sorted by swapping exactly one pair of elements.
+Input Format:
+First line: Integer N (2 ≤ N ≤ 10^4), the number of elements in the array.
+Second line: N space-separated integers representing the array elements.
+
+Output Format:
+Print true if the array is already sorted or can be sorted by one swap; otherwise, print false.
+
+Constraints:
+2 ≤ N ≤ 10^4
+-10^5 ≤ arr[i] ≤ 10^5
+
+Sample Input 1:
+ 5
+ 1 3 5 4 6
+Sample Output 1:
+ true
+Explanation:
+ Swapping 5 and 4 gives: 1 3 4 5 6 — sorted.
+Sample Input 2:
+ 4
+ 1 5 3 2
+Sample Output 2:
+ false
+Explanation:
+ No single swap can make this array sorted.
+Sample Input 3:
+ 3
+ 2 1 3
+Sample Output 3:
+ true
+Explanation:
+ Swapping 2 and 1 gives: 1 2 3 — sorted.
+Edge & Hidden Test Cases:
+Test Case 1:
+ Input:
+ 2
+ 1 2
+Output:
+ true
+Test Case 2:
+ Input:
+ 5
+ 1 2 3 4 5
+Output:
+ true
+Test Case 3:
+ Input:
+ 5
+ 5 4 3 2 1
+Output:
+ false
+Test Case 4:
+ Input:
+ 6
+ 1 2 6 4 5 3
+Output:
+ false
+Test Case 5:
+ Input:
+ 6
+ 1 3 2 4 5 6
+Output:
+ true
+Test Case 6:
+ Input:
+ 4
+ 1 3 2 4
+Output:
+ true
+
+
+Problem 9: Mirror Walkers in the Maze (Corrected & Verified)
+In a futuristic city, two robotic agents — Lumo and Nira — are exploring a linear corridor made of energy tiles. 
+Each tile has an integer energy value (positive, zero, or negative). Lumo starts from the left and Nira from the right.
+ They walk inward, one tile at a time, and accumulate energy.
+ At any point, if the total energy collected by both robots is the same, they stop — this position is called a "mirror checkpoint."
+Your task is to find the maximum number of tiles they could have walked (in total) such that the energies matched at that point.
+ If no such point exists, return 0.
+________________________________________
+Input Format:
+First line: Integer n — length of corridor (2 ≤ n ≤ 10^5)
+
+Second line: n space-separated integers — the energy values on each tile (−10^4 ≤ energy[i] ≤ 10^4)
+
+Output Format:
+A single integer — total number of tiles walked (by Lumo and Nira combined) at the point where their accumulated energies match.
+Examples:
+Input 1:
+ 7
+ 1 3 1 4 1 3 1
+Output 1:
+ 6
+Explanation:
+ Lumo starts from left: 1 → 3 → 1 → 4 (sum = 9)
+ Nira starts from right: 1 → 3 → 1 → 4 (sum = 9)
+ They meet at center, total steps = 3 + 3 = 6
+Input 2:
+ 4
+ 1 2 3 4
+Output 2:
+ 0
+Test Case 1:
+7
+1 3 1 4 1 3 1
+
+Output:
+6
+Test Case 2:
+4
+1 2 3 4
+Output:
+0
+
+Test Case 3:
+ 6
+2 2 2 2 2 2
+Output:
+6
+Test Case 4:
+5
+1 2 3 2 1
+Output:
+4
+Test Case 5:
+ Input:
+3
+-2 0 2
+Output:
+0
+
+Test Case 6:
+ Input:
+6
+1 -2 3 4 -2 1
+Output:
+0
+Test Case 7:
+ Input:
+5
+5 4 -10 4 5
+Output:
+4
+
+Test Case 8:
+ Input:
+4
+1 1000 1000 1
+Output:
+2
+
+
+
+
+Problem 10: Equal Neighbours
+
+In a quiet town, a street has several houses in a row. The mayor wants to ensure that no two neighboring houses have the same number of residents. 
+However, they don’t want to disturb anyone unless necessary.
+Your task is to check whether the current arrangement of house populations already satisfies this condition. 
+You must return "true" if all adjacent houses have different population counts, otherwise return "false".
+Objective:
+Determine whether all adjacent elements in the array are different.
+Input Format:
+First line: Integer n — the number of houses.
+Second line: n space-separated integers representing the population of each house.
+
+Output Format:
+A single word: "true" if all adjacent house populations are different, otherwise "false".
+
+
+Constraints:
+1 ≤ n ≤ 10^5
+0 ≤ population[i] ≤ 10^4
+
+Sample Input 1:
+ 5
+ 1 2 3 4 5
+Sample Output 1:
+ true
+Sample Input 2:
+ 6
+ 1 2 2 3 4 5
+Sample Output 2:
+ false
+Edge & Hidden Test Cases:
+Test Case 1:
+ Input:
+ 1
+ 10
+Output:
+ true
+Test Case 2:
+ Input:
+ 2
+ 5 5
+Output:
+ false
+Test Case 3:
+ Input:
+ 4
+ 1 1 1 1
+Output:
+ false
+Test Case 4:
+ Input:
+ 4
+ 3 2 3 2
+Output:
+ true
+Test Case 5:
+ Input:
+ 5
+ 0 1 0 1 0
+Output:
+ true
+Test Case 6:
+ Input:
+ 6
+ 10 9 8 8 7 6
+Output:
+ false
+Test Case 7:
+ Input:
+ 7
+ 100 200 300 400 500 600 700
+Output:
+ true
+Test Case 8:
+ Input:
+ 3
+ 1 1 2
+Output:
+ false
+Test Case 9:
+ Input:
+ 3
+ 2 1 1
+Output:
+ false
+Test Case 10:
+ Input:
+ 5
+ 5 4 4 4 5
+Output:
+ false
